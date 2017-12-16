@@ -1,5 +1,6 @@
 require "uule/version"
 
 module Uule
-  # Your code goes here...
+  def self.encode(area_name)
+  end
 end
