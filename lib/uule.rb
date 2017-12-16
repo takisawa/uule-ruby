@@ -10,4 +10,8 @@ module Uule
     key = SPECIAL_KEY_TABLE[area_name.size]
     "w+CAIQICI#{key}#{Base64.strict_encode64(area_name)}"
   end
+
+  def self.decode(uule)
+    Base64.strict_decode64(uule[10 .. -1])
+  end
 end
