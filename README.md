@@ -2,6 +2,10 @@
 
 Manage uule parameter for Google Local Search.
 
+References:
+  - https://moz.com/ugc/geolocation-the-ultimate-tip-to-emulate-local-search
+  - https://developers.google.com/adwords/api/docs/appendix/geotargeting
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -21,7 +25,12 @@ Or install it yourself as:
 ## Usage
 
 ```
+require 'uule'
+
+# Generate uule parameter from location canonical name.
 Uule.encode('Sapporo,Hokkaido,Japan') # => 'w+CAIQICIWU2FwcG9ybyxIb2trYWlkbyxKYXBhbg=='
+
+# Generate location canonical name from uule parameter.
 Uule.decode('w+CAIQICIWU2FwcG9ybyxIb2trYWlkbyxKYXBhbg==' # => 'Sapporo,Hokkaido,Japan'
 ```
 
