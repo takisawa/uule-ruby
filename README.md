@@ -23,7 +23,6 @@ Or install it yourself as:
 ```
 Uule.encode('Sapporo,Hokkaido,Japan') # => 'w+CAIQICIWU2FwcG9ybyxIb2trYWlkbyxKYXBhbg=='
 Uule.decode('w+CAIQICIWU2FwcG9ybyxIb2trYWlkbyxKYXBhbg==' # => 'Sapporo,Hokkaido,Japan'
-
 ```
 
 ## Development
