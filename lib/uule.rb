@@ -1,9 +1,10 @@
-require "uule/version"
+# frozen_string_literal: true
+
+require 'uule/version'
 require 'base64'
 
 module Uule
-
-  SPECIAL_KEY_TABLE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+  SPECIAL_KEY_TABLE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_'
 
   # see: https://moz.com/ugc/geolocation-the-ultimate-tip-to-emulate-local-search
   def self.encode(area_name)
@@ -12,6 +13,6 @@ module Uule
   end
 
   def self.decode(uule)
-    Base64.strict_decode64(uule[10 .. -1])
+    Base64.strict_decode64(uule[10..-1])
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Uule do
   describe '.encode' do
     it do
