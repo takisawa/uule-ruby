@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    uule (0.1.0)
+    uule (0.0.1)
 
 GEM
   remote: https://rubygems.org/
