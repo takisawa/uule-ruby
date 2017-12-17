@@ -1,4 +1,4 @@
-# Uule
+# Uule [![Build Status](https://travis-ci.org/takisawa/uule-ruby.svg)](http://travis-ci.org/takisawa/uule-ruby)
 
 Manage uule parameter for Google Local Search.
 
